@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+#name,#phone,#email{
+    color: cadetblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    float: none;
+}
+#name{
+    margin-top: 120px;
+}
+.footer{
+    margin-top: 300px;
+}
+.dv:hover{
+    background-color: #e3f2fd;
+    opacity: 0.15;
+}
+.cp{
+    color: rgba(138, 235, 206, 0.609);
+}
+.ch{
+    color: white;
+}
+.radius{
+    border-radius: 20px;
+}
+.card:hover{
+    box-shadow: 5px .1rem .1rem rgba(12, 175, 224, 0.15);
+}

@@ -1,0 +1,31 @@
+h1{
+    color: cornflowerblue;
+    text-align: center;
+    margin-top: 3%;
+    background:inherit;
+    text-shadow: 5px .1rem .1rem rgba(12, 175, 224, 0.15);
+
+}
+.center{
+    text-align: center;
+    color: rgb(17, 15, 14);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.color{
+    
+    font-size: 19px;
+    color: rgb(31, 104, 104);
+}
+.anchor:active{
+    color: cornflowerblue;
+}
+.anchor:hover{
+    cursor: pointer;
+    color: rgb(134, 134, 71);
+}
+.anchor{
+    color: rgb(78, 38, 209);
+    font-family: fantasy;
+    margin-left: 15px;
+    
+}
