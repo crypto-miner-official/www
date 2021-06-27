@@ -106,15 +106,15 @@
 
             return os;
         }
-        if (getOS() == 'Windows') {
-            alert('win','not uploaded')
-            document.getElementById('test').style.paddingTop = '10%';
-        }else{
+        if (getOS() == 'Android') {
              alert(String(document.getElementById('test').innerHTML));
              document.getElementById('test').style.paddingTop = "50%";
              document.getElementById('test').innerHTML = "not uploaded yet";
              alert(String(document.getElementById('test').innerHTML));
              
+        }else{
+             alert('win','not uploaded')
+             document.getElementById('test').style.paddingTop = '10%';
         }
     </script>
 </body>
