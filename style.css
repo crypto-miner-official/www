@@ -29,3 +29,36 @@
 .card:hover{
     box-shadow: 5px .1rem .1rem rgba(12, 175, 224, 0.15);
 }
+#categories{
+    text-align: center;
+}
+.sub-categories{
+    color: rgba(0, 0, 0, 0.822);
+    margin-left: 2%;
+    display: inline-block;
+    margin-top: .2rem;
+    width: 7.5rem;
+    height: 8rem;
+    text-align: center;
+    cursor: pointer;
+}
+.removeunline{
+    color: rgb(4, 106, 165);
+    text-decoration: none;
+    display: block;
+    margin-left: 1%;
+}
+.removeunline:hover{
+    text-shadow: .1rem .1rem .2rem rgb(86, 161, 163);
+    font-size: 17px;
+    color: rgb(116, 113, 113);
+}
+#aboutus{
+    color: rgba(0, 0, 0, 0.822);
+    margin-left: 2%;
+    display: inline-block;
+    margin-top: .2rem;
+    height: 8rem;
+    text-align: center;
+}
+
