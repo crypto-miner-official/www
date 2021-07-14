@@ -147,7 +147,10 @@
         </div>
         <div class="container" style="margin-top: 5%;">
             <div class="container">
-                <hr id='seprator0' width="25%"><h3 style="display: inline-block;margin-left: 10%; margin-right: 10%;" id='overclock-title'> Overclock Settings </h3><hr id='seprator1' width='25%'>
+                <hr id='seprator0' width="25%">
+                <h3 style="display: inline-block;margin-left: 10%; margin-right: 10%;" id='overclock-title'> Overclock
+                    Settings </h3>
+                <hr id='seprator1' width='25%'>
                 <p style="font-size: 30px;">Overclock Settings for 3070ti :</p>
                 <div class="container" style="margin-top: 3%;">
                     <a href="./photos/overclock-3070ti.PNG"><img src="./photos/overclock-3070ti.png" alt="..."
@@ -173,8 +176,8 @@
                 </div>
                 <p style="font-size: 30px;">Overclock Settings for 3060ti :</p>
                 <div class="container">
-                    <a href="./photos/overclock-3060ti.PNG"><img src="./photos/overclock-3060ti.png" alt="..." width='55%'
-                            style="margin-left: 20%;"></a>
+                    <a href="./photos/overclock-3060ti.PNG"><img src="./photos/overclock-3060ti.png" alt="..."
+                            width='55%' style="margin-left: 20%;"></a>
                     <p
                         style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 18px;margin-top: 2%;text-align: center;margin-left: 5%;margin-right: 5%;">
                         Set the
@@ -183,7 +186,7 @@
                         Memory Clock to +1200 MHz and Set The Fan Speed to 70% or auto. Note: Here We are using MSI
                         Afterburner with the Nvidia Driver Version of 457.51 .</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -192,6 +195,35 @@
     <div>
         <div class='footer'>
             <footer class="text-center text-white c" style="background-color: #f1f1f1;">
+                <div id='categories'>
+                    <div class="sub-categories">
+                        <span><b> Categories :</b></span>
+                        <a href="/mining" class='removeunline'>Mining</a>
+                        <a href="/budget-mining" class='removeunline'>Budget-Mining</a>
+                        <a href="/Mobile" class='removeunline'>Mobile</a>
+                        <a href="/other" class='removeunline'>Other</a>
+                    </div>
+                    <div class="sub-categories">
+                        <span><b> GOTO :</b></span>
+                        <a href="/" class='removeunline'>Home</a>
+                        <a onclick="gotorandomblog()" class='removeunline'>Random Blog</a>
+                        <a href="/mining/" class='removeunline'>Latest Blog</a>
+                        <a href='#' class='removeunline'>Second Site</a>
+                    </div>
+
+                </div>
+                <div>
+                    <div id="aboutus">
+                        <span><b> About Us :</b></span>
+                        <span style="margin-bottom: 0rem;display: block;">Name :- Atul Kumar</span>
+                        <span style="margin-bottom: 0rem;display: block;">Mail : <a
+                                href="https://atulkumaradx@gmail.com"
+                                style="text-decoration: none;color: rgb(4, 106, 165);">
+                                atulkumaradx@gmail.com</a></span>
+                        <span>----------------------------------------</span>
+                    </div>
+                </div>
+
                 <!-- Copyright -->
                 <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2020 Copyright:
@@ -200,52 +232,54 @@
                 <!-- Copyright -->
             </footer>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
-    <script>
-        function getOS() {
-            var userAgent = window.navigator.userAgent,
-                platform = window.navigator.platform,
-                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-                iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-                os = null;
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
+        <script>
+            function getOS() {
+                var userAgent = window.navigator.userAgent,
+                    platform = window.navigator.platform,
+                    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+                    os = null;
 
-            if (macosPlatforms.indexOf(platform) !== -1) {
-                os = 'Mac OS';
-            } else if (iosPlatforms.indexOf(platform) !== -1) {
-                os = 'iOS';
-            } else if (windowsPlatforms.indexOf(platform) !== -1) {
-                os = 'Windows';
-            } else if (/Android/.test(userAgent)) {
-                os = 'Android';
-            } else if (!os && /Linux/.test(platform)) {
-                os = 'Linux';
-            }
+                if (macosPlatforms.indexOf(platform) !== -1) {
+                    os = 'Mac OS';
+                } else if (iosPlatforms.indexOf(platform) !== -1) {
+                    os = 'iOS';
+                } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                    os = 'Windows';
+                } else if (/Android/.test(userAgent)) {
+                    os = 'Android';
+                } else if (!os && /Linux/.test(platform)) {
+                    os = 'Linux';
+                }
 
-            return os;
-        }
-        if (getOS() == 'Android') {
-            let arr = document.getElementsByClassName('mycon');
-            let i = 0;
-            let l = arr.length - 1;
-            while (l != -1) {
-                arr[l].style.width = '16.5rem';
-                l--
+                return os;
             }
-            document.getElementById('img0').style.width = '50%';
-            document.getElementById('pcom').style.marginLeft = '0%';
-            document.getElementById('prcom').style.marginLeft = '0%';
-            document.getElementById('ROIimg').width = 190;
-            document.getElementById('seprator0').style.width = '10%';
-            document.getElementById('seprator1').style.width = '10%';
-            document.getElementById('overclock-title').style.marginLeft = '1%';
-            document.getElementById('overclock-title').style.marginRight = '1%';
-        }
-    </script>
+            if (getOS() == 'Android') {
+                let arr = document.getElementsByClassName('mycon');
+                let i = 0;
+                let l = arr.length - 1;
+                while (l != -1) {
+                    arr[l].style.width = '16.5rem';
+                    l--
+                }
+                document.getElementById('img0').style.width = '50%';
+                document.getElementById('pcom').style.marginLeft = '0%';
+                document.getElementById('prcom').style.marginLeft = '0%';
+                document.getElementById('ROIimg').width = 190;
+                document.getElementById('seprator0').style.width = '10%';
+                document.getElementById('seprator1').style.width = '10%';
+                document.getElementById('overclock-title').style.marginLeft = '1%';
+                document.getElementById('overclock-title').style.marginRight = '1%';
+
+
+
+            }
+        </script>
 </body>
 
 </html>
