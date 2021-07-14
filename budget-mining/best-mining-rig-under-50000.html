@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Mining Rig Under 50000 or $1000 - CRYPTO MINER</title>
     <meta name="description" content="The mining rig under 50000 that give 28Mh/s on ethash algo is ...">
-    <meta name="keywords" content="best mining rig , best mining rig under 50000 , budget mining rig under $1000 , budget mining rig build , 50000 mining rig ,1050ti mining rig build">
+    <meta name="keywords"
+        content="best mining rig ,gpu mining rig, best mining rig under 50000 , budget mining rig under $1000 , budget mining rig build , 50000 mining rig ,1050ti mining rig build">
     <meta name="author" content="Atul">
     <link rel="stylesheet" href="/b.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="best-mining-rig-under-50000.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
 </head>
 
 <body>
@@ -127,7 +128,8 @@
         </ul>
         <div class='container'>
 
-            <h3 style="font-size: 120%;margin-bottom: -2%;font-weight: 540;font-family: monospace;">>>> 2 X 1050ti it can mine on ethash at
+            <h3 style="font-size: 120%;margin-bottom: -2%;font-weight: 540;font-family: monospace;">>>> 2 X 1050ti it
+                can mine on ethash at
                 28Mh/s(currently my best choice)</h3> <br>
             <p class='color' style='color: rgb(24, 14, 0);font-family: monospace;'>
                 ,except if you are getting 1660ti
@@ -152,8 +154,37 @@
 
 
     <div>
-        <div class='footer' style="margin-top: 0%;">
+        <div class='footer'>
             <footer class="text-center text-white c" style="background-color: #f1f1f1;">
+                <div id='categories'>
+                    <div class="sub-categories">
+                        <span><b> Categories :</b></span>
+                        <a href="/mining" class='removeunline'>Mining</a>
+                        <a href="/budget-mining" class='removeunline'>Budget-Mining</a>
+                        <a href="/Mobile" class='removeunline'>Mobile</a>
+                        <a href="/other" class='removeunline'>Other</a>
+                    </div>
+                    <div class="sub-categories">
+                        <span><b> GOTO :</b></span>
+                        <a href="/" class='removeunline'>Home</a>
+                        <a onclick="gotorandomblog()" class='removeunline'>Random Blog</a>
+                        <a href="/mining/" class='removeunline'>Latest Blog</a>
+                        <a href='#' class='removeunline'>Second Site</a>
+                    </div>
+
+                </div>
+                <div>
+                    <div id="aboutus">
+                        <span><b> About Us :</b></span>
+                        <span style="margin-bottom: 0rem;display: block;">Name :- Atul Kumar</span>
+                        <span style="margin-bottom: 0rem;display: block;">Mail : <a
+                                href="https://atulkumaradx@gmail.com"
+                                style="text-decoration: none;color: rgb(4, 106, 165);">
+                                atulkumaradx@gmail.com</a></span>
+                        <span>----------------------------------------</span>
+                    </div>
+                </div>
+
                 <!-- Copyright -->
                 <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2020 Copyright:
@@ -162,42 +193,41 @@
                 <!-- Copyright -->
             </footer>
         </div>
-    </div>
 
-    <!-- scripts here -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+        <!-- scripts here -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
 
-    <script>
-        function getOS() {
-            var userAgent = window.navigator.userAgent,
-                platform = window.navigator.platform,
-                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-                iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-                os = null;
+        <script>
+            function getOS() {
+                var userAgent = window.navigator.userAgent,
+                    platform = window.navigator.platform,
+                    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+                    os = null;
 
-            if (macosPlatforms.indexOf(platform) !== -1) {
-                os = 'Mac OS';
-            } else if (iosPlatforms.indexOf(platform) !== -1) {
-                os = 'iOS';
-            } else if (windowsPlatforms.indexOf(platform) !== -1) {
-                os = 'Windows';
-            } else if (/Android/.test(userAgent)) {
-                os = 'Android';
-            } else if (!os && /Linux/.test(platform)) {
-                os = 'Linux';
+                if (macosPlatforms.indexOf(platform) !== -1) {
+                    os = 'Mac OS';
+                } else if (iosPlatforms.indexOf(platform) !== -1) {
+                    os = 'iOS';
+                } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                    os = 'Windows';
+                } else if (/Android/.test(userAgent)) {
+                    os = 'Android';
+                } else if (!os && /Linux/.test(platform)) {
+                    os = 'Linux';
+                }
+
+                return os;
             }
+            if (getOS() == 'Android') {
+                document.getElementById('changeonandro').style.padding = '0%'
+            } else { document.getElementById('changeonandro').style.padding = '10%' }
 
-            return os;
-        }
-        if (getOS() == 'Android') {
-            document.getElementById('changeonandro').style.padding = '0%'
-        } else { document.getElementById('changeonandro').style.padding = '10%' }
-
-    </script>
+        </script>
 </body>
 
 </html>
