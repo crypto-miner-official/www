@@ -61,4 +61,7 @@
     height: 8rem;
     text-align: center;
 }
+.card{
+    display: inline-block;
+}
 
