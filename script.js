@@ -26,4 +26,7 @@ function gotorandomblog() {
             }
         }).catch(err => console.error(err));
 }
+function latestblog() {
+    window.open('https://crypto-miner.tech/mining/rx-570-vs-3070ti-hashrate.html', '_blank')
+}
 // document.getElementsByClassName('card')[0].innerHTML = ''
